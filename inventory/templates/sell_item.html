@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Sell Item</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ sell_form.as_p }}
+        <button type="submit">Sell</button>
+    </form>
+{% endblock %}
+
